@@ -1,0 +1,43 @@
+/* RESET */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: slateblue;
+}
+
+main {
+    width: 100%;
+    height: 100vh
+}
+
+.carousel{
+    border-radius: 20px;
+    background-color: white;
+    margin: 10rem auto;
+    width: 50%;
+    height: 50vh;
+    border: 2px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.previus-button,
+.forward-button{
+    margin: 0 20px;
+    width: 50px;
+    height: 50px;
+    border: 1px solid blue;
+    border-radius: 50%;
+    text-align: center;
+}
+
+
+i{
+    font-size: 3rem;
+}
