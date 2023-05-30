@@ -50,12 +50,13 @@ const images = [
 const carouselElement = document.querySelector('div.carousel');
 console.log(carouselElement);
 
-let active = 4;
+let active = 1;
+
 
 images.forEach(function( imageElement ) {
     carouselElement.innerHTML +=
     `<div class="carousel-img">
-        <img src="./img/${imageElement}" alt="carousel img">
+        <img src="'.img/' + images[i].image';
     </div>`;
 });
 
@@ -71,18 +72,18 @@ backButton.addEventListener('click' , function(){
     }
 
     document.querySelector('div.carousel-img.show').classList.remove('show');
-    document.querySelector('div.carousel-img')[active].classList.add('show');
+    document.querySelectorAll('div.carousel-img')[active].classList.add('show');
 })
 
 const nextButton = document.querySelector('div.forward-button');
-nextButton.addEventListener('click' , function(){
-    if (active == 0 ){
-        active = images.length - 1;
+nextButton.addEventListener('click', function(){
+    if (active == images.length - 1){
+        active = 0 ;
     } else {
         active = active + 1;
     }
 
     document.querySelector('div.carousel-img.show').classList.remove('show');
-    document.querySelector('div.carousel-img')[active].classList.add('show');
+    document.querySelectorAll('div.carousel-img')[active].classList.add('show');
 })
 
