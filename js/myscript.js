@@ -53,12 +53,15 @@ console.log(carouselElement);
 let active = 1;
 
 
+
 images.forEach(function( imageElement ) {
     carouselElement.innerHTML +=
     `<div class="carousel-img">
-        <img src="'.img/' + images[i].image';
-    </div>`;
+        <img src="${imageElement.image}"
+        </div>`;
+        console.log(imageElement.image)
 });
+
 
 document.querySelectorAll('div.carousel-img')[active].classList.add('show');
 
