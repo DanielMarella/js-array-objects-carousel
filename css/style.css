@@ -41,3 +41,11 @@ main {
 i{
     font-size: 3rem;
 }
+
+.carousel-img{
+    display: none;
+}
+
+.show{
+    display: block;
+}
