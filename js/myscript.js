@@ -56,9 +56,12 @@ let active = 1;
 
 images.forEach(function( imageElement ) {
     carouselElement.innerHTML +=
-    `<div class="carousel-img">
-        <img src="${imageElement.image}"
-        </div>`;
+    `
+    <div class="carousel-img">
+    <img src="${imageElement.image}">
+    <h3 class="title">${imageElement.title}</h3>
+    <h5 class="text">${imageElement.text}</h5>
+    </div>`;
         console.log(imageElement.image)
 });
 
